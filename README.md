@@ -1,6 +1,3 @@
-# esp32-auto-ranging-ohmmeter
-ESP32 ohmmeter project that measures resistance using selectable bridge circuits and ADC averaging. Automatically finds the correct bridge and outputs stable, accurate resistance values. Built for precision measurement across multiple resistance ranges.
-
 # ESP32 Auto-Ranging Ohmmeter
 
 This project implements an **auto-ranging ohmmeter using only an ESP32, resistors, and diodes**, without external ADC, op-amp, or multiplexer ICs.
