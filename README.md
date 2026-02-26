@@ -18,7 +18,7 @@ The ESP32 creates multiple voltage divider bridges using fixed resistors:
 12 kΩ  
 47 kΩ  
 200 kΩ  
-666 kΩ  
+670 kΩ  
 
 Only one bridge is active at a time.
 
