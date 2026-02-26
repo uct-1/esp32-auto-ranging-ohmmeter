@@ -5,6 +5,9 @@
 *.bin
 *.hex
 *.map
+*.partitions.bin
+*.bootloader.bin
+*.firmware.bin
 
 # Arduino IDE temp
 /build/
