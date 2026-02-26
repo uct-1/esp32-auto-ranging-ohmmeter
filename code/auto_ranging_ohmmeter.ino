@@ -16,7 +16,7 @@ const float bridgeResistors[6] = {
 const int TOTAL_BRIDGES = 6;
 
 // -------------------
-// ADC OKUMA (ESP32)
+// ADC READING (ESP32)
 // -------------------
 
 float measureVoltage(int samples)
@@ -39,7 +39,7 @@ float measureVoltage(int samples)
 }
 
 // -------------------
-// HANGİ KÖPRÜ AKTİF
+// WHICH BRIDGE IS ACTIVE
 // -------------------
 
 int activeBridgeIndex()
@@ -53,7 +53,7 @@ int activeBridgeIndex()
 }
 
 // -------------------
-// KÖPRÜ KONTROL (AYNEN)
+// BRIDGE CONTROL
 // -------------------
 
 void adjustBridgeSimple()
@@ -83,10 +83,10 @@ void adjustBridgeSimple()
     }
     else
     {
-      // voltaj aralıkta, devam
+      // voltage within range, continue
     }
 
-    delay(200);  // köprü yerleşmesi için
+    delay(200);  // allow bridge to settle
   }
 }
 
@@ -99,7 +99,7 @@ void setup()
   Serial.begin(9600);
 
   analogReadResolution(12);     // 12 bit
-  analogSetAttenuation(ADC_11db);  // 0–3.3V ölçüm aralığı
+  analogSetAttenuation(ADC_11db);  // 0–3.3V measurement range
 
   for (int i = 0; i < TOTAL_BRIDGES; i++)
   {
