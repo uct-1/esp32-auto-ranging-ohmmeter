@@ -1,3 +1,20 @@
+# Arduino / ESP build files
+*.ino.cpp
+*.ino.cpp.o
+*.elf
+*.bin
+*.hex
+*.map
+
+# Arduino IDE temp
+/build/
+*.tmp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+
 # Prerequisites
 *.d
 
